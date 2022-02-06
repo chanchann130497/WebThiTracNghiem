@@ -1,0 +1,101 @@
+<style>
+body{
+    background-color: #FF3CAC;
+    background-image: linear-gradient(0deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.containers {
+    animation: zoom 1s ease;
+    width: 550px;
+    height: 350px;
+    margin: 50px auto;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(0deg, #8EC5FC 0%, #E0C3FC 100%);
+    position: relative;
+    border-radius: 20px;
+}
+
+.containers:hover {
+    box-shadow:  0 0 10px white , 0 0 20px rgb(53, 127, 225) , 0 0 150px turquoise;
+}
+
+.containers:hover>h2 {
+    text-shadow: 0 0 10px aqua;
+}
+
+.containers:hover > div > img{
+    box-shadow: 0 0 20px red;
+}
+.imgNe {
+    border-radius: 20px;
+    /* animation: zoom 2s ease-in; */
+    width: 200px;
+    height: 270px;
+    animation: zoom 3s cubic-bezier(0.35,0.45,0.65,1);
+
+}
+
+h2 {
+    height: 70px;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 0 0 5px orangered;
+    animation: zoom 2s ease;
+
+}
+@keyframes zoom{
+    0%{transform: scale(2);opacity: 0;}
+    50%{transform: scale(2);opacity: 0;}
+    100%{transform: scale(1);opacity: 1;}
+
+}
+
+.caption {
+    position: absolute;
+    width: 250px;
+    left: 10px;
+    bottom: 10px;
+}
+
+.thongtin {
+    position: absolute;
+    right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.containers:hover > .thongtin {
+    border-radius: 20px;
+    box-shadow: 0 0 30px aqua;
+
+}
+
+.liGioiThieu {
+    animation: zoom 2s ease;
+    font-size: 18px;
+    list-style-type: none;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 0 0 5px orangered;
+}
+span {
+    color: red;
+    text-shadow: 0 0 5px orangered;
+}
+</style>
+<div class="containers">
+    <h2>THÔNG TIN SINH VIÊN</h2>
+    <div class="caption">
+        <img src="image/tuine.jpg" class="imgNe" alt="Hinh Anh">
+    </div>
+    <div class="thongtin">
+        <li class="liGioiThieu"><span>Họ tên : </span> Trần Thị Hoàn </li>
+        <li class="liGioiThieu"><span>Ngày sinh : </span> 31-03-2001 </li>
+        <li class="liGioiThieu"><span>Giới tính : </span> Nữ </li>
+        <li class="liGioiThieu"><span>Chuyên ngành : </span> Ứng Dụng Phần Mềm</li>
+        <li class="liGioiThieu"><span>Điểm : </span> 10 </li>
+    </div>
+</div>
